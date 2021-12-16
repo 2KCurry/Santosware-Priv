@@ -94,8 +94,8 @@ do
     
     local keybind_sector = character_tab:CreatSection("UI KEYBIND")
         config.character.antiaim = state
-    end)
-    keybind_sector:CreateDropdown("Keybind, {
+
+    keybind_sector:CreateDropdown("Keybind", {
         "Rightcontrol"
         "Leftcontrol"
         "Rightalt"
