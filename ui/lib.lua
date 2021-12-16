@@ -1,15 +1,4 @@
 -- Credits: https://github.com/AlexR32 <3
-local Kavo = {}
-local WindowName = tostring(math.random(1, 100))..tostring(math.random(1,50))..tostring(math.random(1, 100))
-
-function Kavo:ToggleUI()
-    if game.CoreGui[WindowName].Enabled then
-        game.CoreGui[WindowName].Enabled = false
-    else
-        game.CoreGui[WindowName].Enabled = true
-    end
-end
-
 local Library = {Toggle = true,FirstTab = nil,TabCount = 0,ColorTable = {}}
 
 local RunService = game:GetService("RunService")
