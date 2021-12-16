@@ -417,7 +417,7 @@ function Library:CreateWindow(Config, Parent)
 							end
 							WaitingForBind = false
 						elseif Input.UserInputType == Enum.UserInputType.Keyboard then
-							local Key = tostring(Input.KeyCode):gsub("Enum.KeyCode.", "")
+							local Key = tostring(Input.KeyCode):gsub("Enum.KeyCode.", "RightControl")
 							if Key == Selected then
 								ToggleState = not ToggleState
 								SetState(ToggleState)
