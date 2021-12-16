@@ -1,3 +1,5 @@
+local library31 = loadstring(game:HttpGet("https://raw.githubusercontent.com/2KCurry/Santosware-Priv/main/ui/lib.lua"))()
+
 local Config = {
     WindowName = "Santosware.cc - phantom forces",
 	Color = Color3.fromRGB(255,0,255),
