@@ -75,11 +75,6 @@ silentaim_sector:CreateToggle("enabled", false, function(state)
         config.gunmod.fast_equip = state
     end)
 end
-do
-    local movement_sector = Tab2:CreateSection("movement")
-    movement_sector:CreateToggle("walkspeed", false, function(state)
-        config.character.walkspeed = state
-    end)
 	
 local Section9 = Tab3:CreateSection("UI Toggle")
 
@@ -89,5 +84,4 @@ end)
 Toggle31:CreateKeybind(tostring(Config.Keybind):gsub("Enum.KeyCode.", ""), function(Key)
 	Config.Keybind = Enum.KeyCode[Key]
 end)
-end
 Toggle31:SetState(true)
