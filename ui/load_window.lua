@@ -9,10 +9,9 @@ local Window = Library:CreateWindow(Config, game:GetService("CoreGui"))
 
 indow:SetBackground("2151741365")
 
-local Tab1 = Window:CreateTab("Legit")
-local Tab2 = Window:CreateTab("Rage")
+local Tab1 = Window:CreateTab("aimbot")
+local Tab2 = Window:CreateTab("character")
 local Tab3 = Window:CreateTab("Misc")
-local Tab4 = Window:CreateTab("Target")
 
 local aimbot_tab = window:CreateTab("aimbot")
 local character_tab = window:CreateTab("character")
