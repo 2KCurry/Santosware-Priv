@@ -75,7 +75,43 @@ silentaim_sector:CreateToggle("enabled", false, function(state)
         config.gunmod.fast_equip = state
     end)
 end
-	
+do
+    local movement_sector = Tab2:CreateSection("movement")
+    movement_sector:CreateToggle("walkspeed", false, function(state)
+        config.character.walkspeed = state
+    end)
+    movement_sector:CreateToggle("jumppower", false, function(state)
+        config.character.jumppower = state
+    end)
+    movement_sector:CreateToggle("auto deploy", false, function(state)
+        config.character.auto_deploy = state
+    end)
+    movement_sector:CreateToggle("fake lag ( might be buggy )", false, function(state)
+        config.character.fake_lag = state
+    end)
+    local settings_sector = Tab2:CreateSection("settings")
+    settings_sector:CreateSlider("walkspeed amount", 0, 100, 35, true, function(state)
+        set_speed(state)
+    end)
+    settings_sector:CreateSlider("jumppower amount", 0, 100, 35, true, function(state)
+        set_jump_power(state)
+    end)
+    settings_sector:CreateSlider("fakelag amount", 0, 20, 15, true, function(state)
+        config.character.fake_lag_limit = state
+    end)
+    
+    local antiaim_sector = Tab2:CreateSection("anti aim")
+    antiaim_sector:CreateToggle("enabled", false, function(state)
+        config.character.antiaim = state
+    end)
+    antiaim_sector:CreateDropdown("stance type", {
+        "prone",
+        "crouch",
+        "stand"
+    }, function(state)
+        config.character.antiaim_stance = state
+    end)
+end	
 local Section9 = Tab3:CreateSection("UI Toggle")
 
 local Toggle31 = Section9:CreateToggle("", nil, function(State)
