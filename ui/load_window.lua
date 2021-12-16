@@ -1,9 +1,8 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/2KCurry/Santosware-Priv/main/ui/lib.lua"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/2KCurry/Santosware-Priv/main/ui/lib.lua"))()
 local window = library:CreateWindow(
     {
         WindowName = "Santosware.cc - phantom forces",
         Color = Color3.fromRGB(179, 51, 196),
-        Keybind = Enum.KeyCode.RightShit
     },
     game.CoreGui
 )
@@ -94,6 +93,10 @@ do
         config.character.fake_lag_limit = state
     end)
     
+    local antiaim_sector = character_tab:CreateSection("anti aim")
+    antiaim_sector:CreateToggle("enabled", false, function(state)
+        config.character.antiaim = state
+    end)
     antiaim_sector:CreateDropdown("stance type", {
         "prone",
         "crouch",
