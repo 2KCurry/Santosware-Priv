@@ -1,3 +1,4 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/2KCurry/Santosware-Priv/main/ui/lib.lua))()
 local window = library:CreateWindow(
     {
         WindowName = "Santosware.cc - phantom forces",
@@ -5,6 +6,15 @@ local window = library:CreateWindow(
     },
     game.CoreGui
 )
+local WindowName = tostring(math.random(1, 100))..tostring(math.random(1,50))..tostring(math.random(1, 100))
+
+function Kavo:ToggleUI()
+    if game.CoreGui[WindowName].Enabled then
+        game.CoreGui[WindowName].Enabled = false
+    else
+        game.CoreGui[WindowName].Enabled = true
+    end
+end
 
 local aimbot_tab = window:CreateTab("aimbot")
 local character_tab = window:CreateTab("character")
@@ -100,3 +110,6 @@ do
         config.character.antiaim_stance = state
     end)
 end
+aimbot_tab:NewKeybind("Toggle UI", "", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
