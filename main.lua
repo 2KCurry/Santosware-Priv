@@ -29,5 +29,5 @@ import('/gunmod/fast_equip.lua')
 import('/gunmod/fast_reload.lua')
 -- import('/gunmod/no_recoil.lua')
 
-import('/ui/lib.lua')
+--import('/ui/lib.lua')
 import('/ui/load_window.lua')
