@@ -1,5 +1,5 @@
 local Config = {
-    WindowName = "copyware.cc private premium",
+    WindowName = "Santosware.cc - phantom forces",
 	Color = Color3.fromRGB(255,0,255),
 	Keybind = Enum.KeyCode.RightShift
 }
@@ -7,14 +7,12 @@ local Config = {
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexR32/Roblox/main/BracketV3.lua"))()
 local Window = Library:CreateWindow(Config, game:GetService("CoreGui"))
 
-local window = library:CreateWindow(
-    {
-        WindowName = "Santosware.cc - phantom forces",
-        Color = Color3.fromRGB(179, 51, 196),
-        Keybind = Enum.KeyCode.RightShift
-    },
-    game.CoreGui
-)
+indow:SetBackground("2151741365")
+
+local Tab1 = Window:CreateTab("Legit")
+local Tab2 = Window:CreateTab("Rage")
+local Tab3 = Window:CreateTab("Misc")
+local Tab4 = Window:CreateTab("Target")
 
 local aimbot_tab = window:CreateTab("aimbot")
 local character_tab = window:CreateTab("character")
