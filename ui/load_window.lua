@@ -107,6 +107,7 @@ do
     antiaim_sector:CreateToggle("enabled", false, function(state)
         config.character.antiaim = state
     end)
+
     antiaim_sector:CreateDropdown("stance type", {
         "prone",
         "crouch",
