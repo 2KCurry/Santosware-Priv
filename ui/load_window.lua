@@ -1,6 +1,6 @@
 local window = library:CreateWindow(
     {
-        WindowName = "purple haze - phantom forces",
+        WindowName = "Santosware.cc - phantom forces",
         Color = Color3.fromRGB(179, 51, 196),
     },
     game.CoreGui
