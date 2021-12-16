@@ -92,22 +92,6 @@ do
         config.character.fake_lag_limit = state
     end)
     
-    local keybind_sector = character_tab:CreatSection("UI KEYBIND")
-        config.character.antiaim = state
-
-    keybind_sector:CreateDropdown("Keybind", {
-        "Rightcontrol"
-        "Leftcontrol"
-        "Rightalt"
-    }, function(state)
-        config.ui.keybind_ui = state
-    end)
-    
-    local antiaim_sector = character_tab:CreateSection("anti aim")
-    antiaim_sector:CreateToggle("enabled", false, function(state)
-        config.character.antiaim = state
-    end)
-
     antiaim_sector:CreateDropdown("stance type", {
         "prone",
         "crouch",
