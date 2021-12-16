@@ -1,3 +1,12 @@
+local Config = {
+    WindowName = "copyware.cc private premium",
+	Color = Color3.fromRGB(255,0,255),
+	Keybind = Enum.KeyCode.RightShift
+}
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexR32/Roblox/main/BracketV3.lua"))()
+local Window = Library:CreateWindow(Config, game:GetService("CoreGui"))
+
 local window = library:CreateWindow(
     {
         WindowName = "Santosware.cc - phantom forces",
