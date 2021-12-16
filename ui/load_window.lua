@@ -3,7 +3,6 @@ local window = library:CreateWindow(
     {
         WindowName = "Santosware.cc - phantom forces",
         Color = Color3.fromRGB(179, 51, 196),
-        Keybind = Enum.KeyCode.RightShift
     },
     game.CoreGui
 )
