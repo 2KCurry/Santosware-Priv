@@ -100,7 +100,7 @@ do
         "Leftcontrol"
         "Rightalt"
     }, function(state)
-        config.character.keybind_ui = state
+        config.ui.keybind_ui = state
     end)
     
     local antiaim_sector = character_tab:CreateSection("anti aim")
