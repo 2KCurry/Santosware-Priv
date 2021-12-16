@@ -6,15 +6,6 @@ local window = library:CreateWindow(
     },
     game.CoreGui
 )
-local WindowName = tostring(math.random(1, 100))..tostring(math.random(1,50))..tostring(math.random(1, 100))
-
-function Kavo:ToggleUI()
-    if game.CoreGui[WindowName].Enabled then
-        game.CoreGui[WindowName].Enabled = false
-    else
-        game.CoreGui[WindowName].Enabled = true
-    end
-end
 
 local aimbot_tab = window:CreateTab("aimbot")
 local character_tab = window:CreateTab("character")
