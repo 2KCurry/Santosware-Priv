@@ -1,4 +1,5 @@
 -- Credits: https://github.com/AlexR32 <3
+
 local Library = {Toggle = true,FirstTab = nil,TabCount = 0,ColorTable = {}}
 
 local RunService = game:GetService("RunService")
@@ -416,7 +417,7 @@ function Library:CreateWindow(Config, Parent)
 							end
 							WaitingForBind = false
 						elseif Input.UserInputType == Enum.UserInputType.Keyboard then
-							local Key = tostring(Input.KeyCode):gsub("Enum.KeyCode.RightControl", "")
+							local Key = tostring(Input.KeyCode):gsub("Enum.KeyCode.", "")
 							if Key == Selected then
 								ToggleState = not ToggleState
 								SetState(ToggleState)
