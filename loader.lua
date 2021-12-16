@@ -6,7 +6,7 @@ local script_details = {
 local url = script_details.debug and "http://localhost:6845" or "https://raw.githubusercontent.com/2KCurry/Santosware-Priv/main/main.lua"
 
 local out = script_details.debug and function(T, ...)
-    return warn("[purple haze - debug]: "..T:format(...))
+    return warn("[Santosware.cc - debug]: "..T:format(...))
 end or function() end
 
 local function import(file)
