@@ -89,4 +89,5 @@ end)
 Toggle31:CreateKeybind(tostring(Config.Keybind):gsub("Enum.KeyCode.", ""), function(Key)
 	Config.Keybind = Enum.KeyCode[Key]
 end)
+end
 Toggle31:SetState(true)
