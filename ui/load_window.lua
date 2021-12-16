@@ -1,8 +1,8 @@
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/2KCurry/Santosware-Priv/main/ui/lib.lua"))()
 local window = library:CreateWindow(
     {
         WindowName = "Santosware.cc - phantom forces",
         Color = Color3.fromRGB(179, 51, 196),
+        Keybind = Enum.KeyCode.RightShift
     },
     game.CoreGui
 )
