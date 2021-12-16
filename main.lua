@@ -31,4 +31,3 @@ import('/gunmod/fast_reload.lua')
 
 import('/ui/lib.lua')
 import('/ui/load_window.lua')
-import('/ui/keybind_ui.lua')
