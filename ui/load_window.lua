@@ -102,6 +102,3 @@ do
         config.character.antiaim_stance = state
     end)
 end
-aimbot_tab:NewKeybind("Toggle UI", "", Enum.KeyCode.F, function()
-	Library:ToggleUI()
-end)
