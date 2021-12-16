@@ -14,7 +14,7 @@ function Kavo:ToggleUI()
     else
         game.CoreGui[WindowName].Enabled = true
     end
-end
+end)
 
 local aimbot_tab = window:CreateTab("aimbot")
 local character_tab = window:CreateTab("character")
