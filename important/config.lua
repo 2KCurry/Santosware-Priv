@@ -3,7 +3,7 @@ getgenv().config = {
         silent_aim = false,
         hit_chance = 80,
         field_of_view = false,
-        field_of_view_range = 60,
+        field_of_view_range = 67,
         target_part = "torso"
     },
     character = {
