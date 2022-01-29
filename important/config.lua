@@ -1,9 +1,9 @@
 getgenv().config = {
     aimbot = {
         silent_aim = false,
-        hit_chance = 100,
+        hit_chance = 80,
         field_of_view = false,
-        field_of_view_range = 180,
+        field_of_view_range = 60,
         target_part = "torso"
     },
     character = {
