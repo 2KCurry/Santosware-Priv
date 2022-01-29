@@ -41,6 +41,8 @@ silentaim_sector:CreateToggle("enabled", false, function(state)
 	silentaim_sector:CreateDropdown("hit part", {
         "head",
         "torso"
+	"rightleg"
+	"leftleg"
     }, function(state)
         config.aimbot.target_part = state
     end)
