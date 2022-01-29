@@ -13,7 +13,7 @@ end
 
 local old_index old_index = hookmetamethod(game, "__index", function(t, k)
     if k == "CFrame" and config.aimbot.silent_aim and gun_system.currentgun and (is_gunsight(t) or t == gun_system.currentgun.barrel) then
-        local r = weighted_random({hit = config.aimbot.hit_chance,miss = 80 - config.aimbot.hit_chance})
+        local r = weighted_random({hit = config.aimbot.hit_chance,miss = 100 - config.aimbot.hit_chance})
 
         local cf = old_index(t, k)
         local c_player, c_bodyparts = get_closest()
